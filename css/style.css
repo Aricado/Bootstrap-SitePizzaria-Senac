@@ -1,0 +1,36 @@
+.carousel-caption {
+    right: 12% !important;
+    left: 50% !important;
+    /* VW Medida que considera a largura disponivel da tela */
+    top: 12vw !important;
+    text-align: right !important;
+}
+@media (max-width:992px) {
+    .carousel-caption h1 span{
+        font-size: 3rem !important;
+}
+.carousel-caption h1{
+    font-size: 2rem !important;
+}
+
+.carousel-caption p{
+    font-size: 1rem !important;
+}
+
+}
+
+.carousel-caption h1 {
+
+    font-size: 3rem;
+    font-family: "Irish Grover", cursive, system-ui;
+}
+
+.carousel-caption h1 span{
+    font-size: 5rem;
+    color: rgb(185, 4, 4);
+    text-shadow: 3px 5px 3px gray
+}
+
+;.carousel-caption p{
+    font-size: 1.3rem;
+}
