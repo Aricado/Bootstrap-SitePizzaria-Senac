@@ -1,3 +1,11 @@
+.font-irish {
+    font-family: "Irish Grover", cursive, system-ui !important;
+}
+
+.img-h1 {
+    height: 2.5rem;
+}
+
 .carousel-caption {
     right: 12% !important;
     left: 50% !important;
@@ -5,17 +13,23 @@
     top: 12vw !important;
     text-align: right !important;
 }
-@media (max-width:992px) {
-    .carousel-caption h1 span{
-        font-size: 3rem !important;
-}
-.carousel-caption h1{
-    font-size: 2rem !important;
-}
 
-.carousel-caption p{
-    font-size: 1rem !important;
-}
+@media (max-width:992px) {
+    .img-h1 {
+        height: calc(1.375rem + 1.5vw)
+    }
+
+    .carousel-caption h1 span {
+        font-size: 3rem !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2rem !important;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem !important;
+    }
 
 }
 
@@ -25,12 +39,36 @@
     font-family: "Irish Grover", cursive, system-ui;
 }
 
-.carousel-caption h1 span{
+.carousel-caption h1 span {
     font-size: 5rem;
     color: rgb(185, 4, 4);
     text-shadow: 3px 5px 3px gray
 }
 
-;.carousel-caption p{
+;
+
+.carousel-caption p {
     font-size: 1.3rem;
+}
+
+.texto-vermelho {
+    color: rgb(185, 4, 4);
+}
+
+.selo {
+    bottom: -50px !important;
+    left: -50px !important;
+}
+
+.pizza-menu:hover{
+    background-color: white;
+    box-shadow:var(--bs-box-shadow) !important;
+}
+
+.img-pizza{
+    filter: grayscale(100%)
+}
+
+.img-pizza:hover{
+    filter: grayscale(0)
 }
