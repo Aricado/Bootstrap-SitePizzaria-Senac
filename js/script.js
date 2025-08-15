@@ -1,10 +1,11 @@
 window.addEventListener('scroll', function () {
     const posicao = window.scrollY;
-    console.log(posicao);
+        //console.log(posicao);
     if (posicao > 100) {
-        this.document.getElementById("navbar").classList.add("bg-body-tertiary");
+        alfa = ((posicao>=300)?1:(posicao - 100) / 200); console.log(alfa);
+        this.document.getElementById("navbar").slyle.backgroundcolor = "rgba(248, 249, 250, " + alfa + ")";
     }
     else {
-        this.document.getElementById("navbar").classList.remove("bg-body-tertiary");
+        this.document.getElementById("navbar").style.backgroundcolor = "rgba(248, 249, 250, 0)";
     }
 })

@@ -18,16 +18,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  <!-- CSS do AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
   <!-- Barra de navegação -->
-  <nav id="navbar" class="navbar navbar-expand-lg py-0 fixed-top">
+  <nav id="navbar" class="navbar navbar-expand-lg py-0 fixed-top" data-aos="fade-down">
     <div class="container-fluid">
-      <a class="navbar-brand pt-0 ps-5" href="index.html">
-        <img src="./img/logotipos/logotipo_menu.png" alt="Logotipo da Pizzaria TestaResto" height="70">
-
-      </a>
+      <div class="d-flex">
+        <a class="navbar-brand pt-0 ps-5" href="index.html">
+          <img src="./img/logotipos/logotipo_menu.png" alt="Logotipo da Pizzaria TestaResto" height="80">
+        </a>
+        <div class="font-irish mt-2 fs-1 text-white" style="text-shadow: 2px 2px 5px black;"> Pizzaria TestaResto
+        </div>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -51,7 +59,7 @@
               Links
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+              <li><a class="dropdown-item" href="blog.html" target="_blank">Blog</a></li>
               <li><a class="dropdown-item" href="historia.html">História</a></li>
               <li><a class="dropdown-item" href="equipe.html">Equipe</a></li>
             </ul>
@@ -74,8 +82,9 @@
         <div class="carousel-item active">
           <img src="./img/banner/banner_marguerita.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption">
-            <h1>Melhor escolha<br><span>Margarita</span></h1>
-            <p class="d-none d-md-block">Some representative placeholder content for the first slide.</p>
+            <h1 data-aos="fade-left">Melhor escolha<br><span>Margarita</span></h1>
+            <p data-aos="fade-left" class="d-none d-md-block">Some representative placeholder content for the first
+              slide.</p>
           </div>
         </div>
         <div class="carousel-item">
@@ -99,7 +108,7 @@
 
   </section>
 
-  <section id="quem_somos" class="container">
+  <section data-aos="fade-right" id="quem_somos" class="container">
     <div class="mt-5 py-5 px-2 px-md-5 card shadow">
       <h5 class="text-center mb-0"> Bem vindo!</h5>
       <h1 class="text-center font-irish texto-vermelho">Quem somos <img class="img-h1" src="./img/logotipos/italy.png"
@@ -126,7 +135,7 @@
     </div>
   </section>
 
-  <section id="Cardapio" class="mt-5 container-fluid bg-body-tertiary">
+  <section id="cardapio" class="mt-5 container-fluid bg-body-tertiary">
     <div class="row">
       <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
         <div class="my-5 p-4">
@@ -174,12 +183,7 @@
           </div>
         </div>
       </div>
-    </div>
 
-  </section>
-
-  <section id="Cardapio" class="mt-5 container-fluid bg-body-tertiary">
-    <div class="row">
       <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
         <div class="my-5 p-4">
           <img class="img-fluid px-4 img-pizza" src="./img/cardapio/pizza_marguerita_color.png" alt="">
@@ -226,31 +230,227 @@
           </div>
         </div>
       </div>
+
+      <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+        <div class="my-5 p-4">
+          <img class="img-fluid px-4 img-pizza" src="./img/cardapio/pizza_pepperoni_color.png" alt="">
+          <div class="text-center mt-3">
+            <h5 class="font-irish"> Pizza Pepperoni</h5>
+            <p>Pepperoni, azeitona, champignon e tomate.</p>
+            <div class="row">
+              <div class="col">
+                <hr>
+              </div>
+              <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+              <div class="col">
+                <hr>
+              </div>
+            </div>
+            <ul class="list-group text-start list-group-flush">
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <div>
+                  <input class="form-check-input me-1" type="radio" name="pizza3" value="p" id="pizza3p" checked>
+                  <label class="form-check-label" for="pizza3p">22cm</label>
+                </div>
+                <span>R$ 30,00</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <div>
+                  <input class="form-check-input me-1" type="radio" name="pizza3" value="p" id="pizza3m" checked>
+                  <label class="form-check-label" for="pizza3m">29cm</label>
+                </div>
+                <span>R$ 40,00</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <div>
+                  <input class="form-check-input me-1" type="radio" name="pizza3" value="p" id="pizza3g" checked>
+                  <label class="form-check-label" for="pizza3g">35cm</label>
+                </div>
+                <span>R$ 50,00</span>
+              </li>
+
+            </ul>
+            <button type="button" class="btn btn-outline-success rounded-pill mt-5 w-100" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Adicionar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-sm-6 col-10 mx-auto pizza-menu">
+        <div class="my-5 p-4">
+          <img class="img-fluid px-4 img-pizza" src="./img/cardapio/pizza_vegetariana_color.png" alt="">
+          <div class="text-center mt-3">
+            <h5 class="font-irish"> Pizza Vegetariana</h5>
+            <p>Mussarela, azeitona preta, e tomate.</p>
+            <div class="row">
+              <div class="col">
+                <hr>
+              </div>
+              <div class="col-auto pt-1 px-0 fw-bold">Tamanhos</div>
+              <div class="col">
+                <hr>
+              </div>
+            </div>
+            <ul class="list-group text-start list-group-flush">
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <div>
+                  <input class="form-check-input me-1" type="radio" name="pizza4" value="p" id="pizza4p" checked>
+                  <label class="form-check-label" for="pizza4p">22cm</label>
+                </div>
+                <span>R$ 30,00</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <div>
+                  <input class="form-check-input me-1" type="radio" name="pizza4" value="p" id="pizza4m" checked>
+                  <label class="form-check-label" for="pizza4m">29cm</label>
+                </div>
+                <span>R$ 40,00</span>
+              </li>
+              <li class="list-group-item bg-transparent d-flex justify-content-between">
+                <div>
+                  <input class="form-check-input me-1" type="radio" name="pizza4" value="p" id="pizza4g" checked>
+                  <label class="form-check-label" for="pizza4g">35cm</label>
+                </div>
+                <span>R$ 50,00</span>
+              </li>
+
+            </ul>
+            <button type="button" class="btn btn-outline-success rounded-pill mt-5 w-100" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Adicionar
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
     </div>
 
   </section>
+
+
 
   <section>
-    <div class="container mt-5"> 
-    <h1 class="text-center font-irish texto-vermelho">Nossos Produtos<img class="img-h1"
-        src="./img/logotipos/italy.png">
-    </h1>
-    <div class="row">
-      <div class="col-12">
-        <img src="./img/index/toldo.png" class="img-fluid" alt="">
+    <div class="container mt-5">
+      <h1 class="text-center font-irish texto-vermelho">Nossos Produtos<img class="img-h1"
+          src="./img/logotipos/italy.png">
+      </h1>
+      <div class="row">
+        <div class="col-12">
+          <img src="./img/index/toldo.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-6 col-12">
+          <img src="./img/index/vegetais.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-6 col-12 px-4">Cada pizza que criamos é uma celebração de ingredientes frescos e da arte de
+          fazer a massa. Nossa farinha é selecionada com o maior cuidado, o molho de tomate é feito a partir de uma
+          receita artesanal, e os queijos são escolhidos pela sua qualidade superior, derretendo perfeitamente em cada
+          fatia. As coberturas, de carnes a vegetais, são frescas, garantindo que cada mordida seja uma experiência de
+          sabor autêntica e inesquecível. Aqui, a paixão pela pizza se traduz em um compromisso com a excelência,
+          levando à sua mesa o melhor da nossa tradição.</div>
       </div>
-      <div class="col-md-6 col-12">
-        <img src="./img/index/vegetais.png" class="img-fluid" alt="">
-      </div>
-      <div class="col-md-6 col-12 px-4">Do produtor para...</div>
     </div>
-  </div>
 
   </section>
 
 
+  <section>
+    <div class="container-fluid my-5 bg-body-tertiary">
+      <!-- Usar a GRID do Bootstrap -->
+      <div class="row">
+        <!-- Primeiro Card -->
+        <div class="col-md-3 col-6 text-center py-5 pizza-menu">
+          <img class="img-pizza" src="./img/slider/pizza.svg" height="100px">
+          <p class="mt-3 fs-3 fw-bold">Pizzas Italianas</p>
+          <p class="px-1 px-sm-4 px-md-5">Pizzas naturalmente fermentadas por 48 horas.</p>
+
+        </div>
+        <!-- Segundo Card -->
+        <div class="col-md-3 col-6 text-center py-5 pizza-menu">
+          <img class="img-pizza" src="./img/slider/burger.svg" height="100px">
+          <p class="mt-3 fs-3 fw-bold">Hamburguers</p>
+          <p class="px-1 px-sm-4 px-md-5">Lanches com hamburguer artesanal.</p>
+
+        </div>
+        <!-- Terceiro Card -->
+        <div class="col-md-3 col-6 text-center py-5 pizza-menu">
+          <img class="img-pizza" src="./img/slider/beer.svg" height="100px">
+          <p class="mt-3 fs-3 fw-bold">Cerveja</p>
+          <p class="px-1 px-sm-4 px-md-5">Choops e cervejas artesanais de produtores locais.</p>
+
+        </div>
+        <!-- Quarto Card -->
+        <div class="col-md-3 col-6 text-center py-5 pizza-menu">
+          <img class="img-pizza" src="./img/slider/omelette.svg" height="100px">
+          <p class="mt-3 fs-3 fw-bold">Breakfast</p>
+          <p class="px-1 px-sm-4 px-md-5">Cardápio completo de café da manhã.</p>
+
+        </div>
+        <!-- Fim do primeiro card -->
+      </div>
+    </div>
+  </section>
 
 
+  <section>
+    <div class="container">
+      <div class="mt-5 py-5 px-2 px-md-5 card shadow">
+        <h1 class="text-center font-irish texto-vermelho">Blog<img class="img-h1" src="./img/logotipos/italy.png"
+            alt=""></h1>
+        <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-3">
+          <!-- Primeiro Post -->
+          <div class="col">
+            <div class="card h-100 pizza-menu">
+              <img class="card-img-top" src="./img/blog/img_1.jpg" alt="">
+              <div class="card-body">
+                <div class="card-title fs-4 fw-bold">Nosso espaço!</div>
+                <p>Veja nosso espaço...</p>
+              </div>
+              <div class="card-footer bg-transparent border-top-0 text-end"><a href="pizza_lançamento.html"
+                  class="btn btn-light btn-sm rounded-pill px-3">Leia mais!
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 pizza-menu">
+              <img class="card-img-top" src="./img/blog/img_2.jpg" alt="">
+              <div class="card-body">
+                <div class="card-title fs-4 fw-bold">Culinaria!</div>
+                <p>Saiba como fazer pães caseiros...</p>
+              </div>
+              <div class="card-footer bg-transparent border-top-0 text-end"><a href="pizza_lançamento.html"
+                  class="btn btn-light btn-sm rounded-pill px-3">Leia mais!
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 pizza-menu">
+              <img class="card-img-top" src="./img/blog/img_3.jpg" alt="">
+              <div class="card-body">
+                <div class="card-title fs-4 fw-bold">Equipe!</div>
+                <p>Conheça nossa equipe de chefes...</p>
+              </div>
+              <div class="card-footer bg-transparent border-top-0 text-end"><a href="pizza_lançamento.html"
+                  class="btn btn-light btn-sm rounded-pill px-3">Leia mais!
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
 
   <p>&nbsp;</p>
   <p>&nbsp;</p>
@@ -291,13 +491,27 @@
       </div>
     </div>
   </div>
+
+
+  <div class="position-fixed end-0 bottom-0 m-4" style="z-index: 1050;">
+    <a href="#" class="btn text-primary fs-3"><i class="fa-regular fa-circle-up"></i></a>
+
+  </div>
+
+
+
   <!-- JS do Bootstrap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.min.js"
-    integrity="sha512-zKeerWHHuP3ar7kX2WKBSENzb+GJytFSBL6HrR2nPSR1kOX1qjm+oHooQtbDpDBSITgyl7QXZApvDfDWvKjkUw=="
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.7/js/bootstrap.bundle.min.js"
+    integrity="sha512-Tc0i+vRogmX4NN7tuLbQfBxa8JkfUSAxSFVzmU31nVdHyiHElPPy2cWfFacmCJKw0VqovrzKhdd2TSTMdAxp2g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <script src="./js/script.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- JS do AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
